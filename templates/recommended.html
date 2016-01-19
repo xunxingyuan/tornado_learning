@@ -1,0 +1,8 @@
+﻿{% extends "main.html" %}
+
+{% block body %}
+<h2>Recommended Reading</h2>
+    {% for book in books %}
+        {% module book(book) %}
+    {% end %}
+{% end %}
